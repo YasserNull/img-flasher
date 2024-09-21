@@ -10,3 +10,4 @@ You can use Img Flasher app or use imgf command on terminal.
 
 ### app : 
 note : I apologize for the mistakes and the poor user interface; I am not experienced enough. I also developed it using Sketchware Pro.
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/screenshot1.png)
