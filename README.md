@@ -14,6 +14,6 @@ note : I apologize for the mistakes and the poor user interface; I am not experi
 + Extract or backup : You can extract img files from your phone like boot.img , nvram.img , recovery.img.
 note : click img or 📀 icon to select file.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot2.png)
-When you click on the Extract button, it will extract the files to the /storage/emulated/0/download/Imgflasher/ path.
-note : click fab button or 🔄 icon to reset.
+When you click on the Extract button, it will extract the files to the /storage/emulated/0/Download/ImgFlasher/ path.
+note : click fab button or 🔃 icon to reload.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot3.png)
