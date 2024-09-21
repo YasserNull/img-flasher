@@ -1,8 +1,5 @@
 #!/system/bin/sh
- #Copyright 2024 Yasser Null
-#
-# Code is licensed under terms of GNU GPL v3, see LICENSE file
-# for the full terms.
+
 get_size() {
 size=$(expr $(cat $1) \* 512)
 if [ "$(expr $size \>= 1073741824)" -eq 1 ]; then
