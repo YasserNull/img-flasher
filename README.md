@@ -6,4 +6,7 @@ You can use Img Flasher app or use imgf command on terminal.
 ### Warning: When using the flash command, you cannot stop it, so be cautious. Flashing an incorrect file may result in your device being bricked or entering a boot loop.
 
 
-# Usages
+## Usages
+
+### app : 
+note : I apologize for the mistakes and the poor user interface; I am not experienced enough. I also developed it using Sketchware Pro.
