@@ -127,4 +127,4 @@ else
         repack [img] [path] [new-img] - Repack given partition
         version          - output version information and exit
         help                     - Show this help message"
-f
+fi
