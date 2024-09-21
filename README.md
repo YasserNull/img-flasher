@@ -18,3 +18,15 @@ When you click on the Extract button, it will extract the files to the /storage/
 note : click fab button or 🔃 icon to reload.
 note : you can scroll the log.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot3.png)
++ flash : 
+note : click ✏️ to select img file or open folder like fastboot_redmi9a/
+boot.img
+recovery.img
+...
+note : close button will close files.
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot4.png)
+note : opened files Their color is different
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot5.png)
+
+
