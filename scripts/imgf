@@ -1,0 +1,133 @@
+#!/system/bin/sh
+ #Copyright 2024 Yasser Null
+#
+# Code is licensed under terms of GNU GPL v3, see LICENSE file
+# for the full terms.
+get_size() {
+size=$(expr $(cat $1) \* 512)
+if [ "$(expr $size \>= 1073741824)" -eq 1 ]; then
+    echo "$(expr $size / 1024 / 1024 / 1024)GB"
+elif [ "$(expr $size \>= 1048576)" -eq 1 ]; then
+    echo "$(expr $size / 1024 / 1024)MB"
+elif [ "$(expr $size \>= 1024)" -eq 1 ]; then
+    echo "$(expr $size / 1024)KB"
+else
+    echo "${size}B"
+fi
+}
+partitions=()
+initializeSystem() {
+for dir in /sys/class/block/*/; do
+  partition_file="$dir/partition"
+  size_file="$dir/size"
+  uevent_file="$dir/uevent"
+
+  if [ -f "$partition_file" ] && [ -f "$size_file" ] && [ -f "$uevent_file" ]; then
+    size=$(get_size "$size_file")
+
+   
+    devname=$(grep -m1 '^DEVNAME=' "$uevent_file" | cut -d'=' -f2)
+    partname=$(grep -m1 '^PARTNAME=' "$uevent_file" | cut -d'=' -f2)
+
+    if [ -n "$devname" ] && [ -n "$partname" ]; then
+      partitions+=("$partname:$devname:$size")
+    fi
+  fi
+done
+}
+if [ -z "$1" ]; then
+  echo "Error: Missing command argument."
+  echo "Use 'help' to see available commands."
+  exit 1
+fi
+
+if [ "$1" == "list" ]; then
+initializeSystem
+  for partition in "${partitions[@]}"; do
+    IFS=: read -r partname devname size <<< "$partition"
+    echo "$partname $devname $size"
+  done | sort
+elif [ "$1" == "size" ]; then
+  if [ -z "$2" ]; then
+    echo "Error: Missing partition name for size command."
+    exit 1
+  fi
+initializeSystem
+  for partition in "${partitions[@]}"; do
+    IFS=: read -r partname devname size <<< "$partition"
+    if [[ "$partname" == "$2" ]]; then
+      echo "$size"
+    fi
+  done
+elif [ "$1" == "dev" ]; then
+  if [ -z "$2" ]; then
+    echo "Error: Missing partition name for dev command."
+    exit 1
+  fi
+initializeSystem
+  for partition in "${partitions[@]}"; do
+    IFS=: read -r partname devname size <<< "$partition"
+    if [[ "$partname" == "$2" ]]; then
+      echo "$devname"
+    fi
+  done
+
+elif [ "$1" == "flash" ]; then
+  if [ -z "$2" ] || [ -z "$3" ]; then
+    echo "Error: Missing partition name or image file for flash command."
+    exit 1
+  fi
+initializeSystem
+  for partition in "${partitions[@]}"; do
+    IFS=: read -r partname devname size <<< "$partition"
+    if [[ "$partname" == "$2" ]]; then
+      dd if=$3 of=/dev/block/$devname 
+    fi
+  done
+
+elif [ "$1" == "extract" ]; then
+  if [ -z "$2" ] || [ -z "$3" ]; then
+    echo "Error: Missing partition name or output file for extract command."
+    exit 1
+  fi
+initializeSystem
+  for partition in "${partitions[@]}"; do
+    IFS=: read -r partname devname size <<< "$partition"
+    if [[ "$partname" == "$2" ]]; then
+      dd if=/dev/block/$devname of=$3
+    fi
+  done
+
+elif [ "$1" == "unpack" ]; then
+  if [ -z "$2" ] || [ -z "$3" ]; then
+    echo "Error: Missing image file or output path for unpack command."
+    exit 1
+  fi
+  mkdir -p $3
+  cd $3
+  /data/adb/magisk/magiskboot unpack $(realpath $2)
+
+elif [ "$1" == "repack" ]; then
+  if [ -z "$2" ] || [ -z "$3" ] || [ -z "$4" ]; then
+    echo "Error: Missing image file, path or output image for repack command."
+    exit 1
+  fi
+  cd $3
+  /data/adb/magisk/magiskboot repack $(realpath $2) $4
+
+elif [ "$1" == "version" ]; then
+ echo "imgf 1.0"
+else
+  echo "
+  Usage: imgf [command] [arguments]
+      Commands:
+        list                     - Print partitions list
+        size [partname]          - Get partition size
+        dev [partname]           - Get partition devname name
+        flash [partname] [img]   - Flash given partition
+        extract [partname] [img] - Extract given partition
+        unpack [img] [path]      - Unpack given partition
+        repack [img] [path] [new-img] - Repack given partition
+        version          - output version information and exit
+        help                     - Show this help message"
+f
