@@ -1,0 +1,56 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#151515"
+		android:orientation="horizontal">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:focusable="false"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:padding="5dp"
+			android:src="@drawable/dvd"
+			android:scaleType="fitCenter" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview1"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="13dp"
+				android:gravity="center_vertical"
+				android:text="Part name :"
+				android:textSize="10sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/textview2"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="13dp"
+				android:gravity="center_vertical"
+				android:text="Dev name :"
+				android:textSize="10sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/textview3"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="13dp"
+				android:gravity="center_vertical"
+				android:text="Size :"
+				android:textSize="10sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

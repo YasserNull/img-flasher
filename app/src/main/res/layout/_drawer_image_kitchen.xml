@@ -1,0 +1,75 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="320dp"
+		android:layout_height="match_parent"
+		android:background="#171717"
+		android:orientation="vertical">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:background="#141414"
+			android:src="@drawable/ic_icon"
+			android:scaleType="fitCenter"
+			android:layout_gravity="center_horizontal|center_vertical" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:background="#151515"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="5dp"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:background="#263238"
+				android:orientation="horizontal" />
+			<Button
+				android:id="@+id/button2"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:background="@android:color/transparent"
+				android:gravity="left|center_vertical"
+				android:text="Flash"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:background="#151515"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="5dp"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:background="#00E676"
+				android:orientation="horizontal" />
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:background="@android:color/transparent"
+				android:gravity="left|center_vertical"
+				android:text="Image Kitchen"
+				android:textSize="16sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
