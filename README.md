@@ -15,15 +15,15 @@ When you click on the Extract button, it will extract the files to the /storage/
 Note : Click fab button or 🔃 icon to reload.
 Note : You can scroll the log.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot3.png)
-### flash : flashing img files boot.img , recovery.img and other files like fastboot.
-note : click ✏️ to select img file or open folder like fastboot_redmi9a/
+### Flash : Flashing img files boot.img , recovery.img and other files like fastboot.
+Note : Click ✏️ to select img file or open folder like fastboot_redmi9a/
 boot.img
 recovery.img
 ...
 Note : Close button will close files.
 
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot4.png)
-note : opened files Their color is different
+Note : Opened files Their color is different
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot5.png)
 The recovery file has been flashed successfully but it seems it was the wrong file.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/camera1.png)
