@@ -27,5 +27,8 @@ note : opened files Their color is different
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot5.png)
 The recovery file has been flashed successfully but it seems it was the wrong file.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/camera1.png)
-
+### Unpack && Repack : unpack img file like boot.img and repack again.
+note : you will found image kitchen button on drawer.
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot6.png)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot7.png)
 
