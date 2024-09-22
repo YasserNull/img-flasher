@@ -82,8 +82,12 @@ imgf list
 result: ```mccblk0p31 boot 6MB```
 
 + dev : get partition devname
- ```imgf dev boot```
- result: ```mmcblk0p31```
+```
+imgf dev boot
+```
+result: ```mmcblk0p31```
 + size : get partition size
- ```imgf size boot```
- result: ```64MB```
+```
+imgf size boot
+```
+result: ```64MB```
