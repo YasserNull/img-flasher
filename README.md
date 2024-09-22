@@ -75,19 +75,36 @@ The app will crashed if you use this pathes so don't use.
         help                     - Show this help message"
 ```
 ### ***Examples :***
-+ list : print devname ,partname, size 
++ list : Print devname ,partname, size.
 ```
 imgf list
 ```
-result: ```mccblk0p31 boot 6MB```
+     result: ```mccblk0p31 boot 6MB```
 
-+ dev : get partition devname
++ dev : get partition devname.
 ```
 imgf dev boot
 ```
-result: ```mmcblk0p31```
-+ size : get partition size
+     result: ```mmcblk0p31```
++ size : Get partition size
 ```
 imgf size boot
 ```
-result: ```64MB```
+     result: ```64MB```
++ flash : Like fastboot.
+```
+imgf flash boot /sdcard/download/boot.img
+```
++ extract : Extract img files from your device.
+```
+imgf extract boot /sdcard/download/boot.img
+```
++ unpack : Unpack img file.
+```
+imgf unpack /sdcard/download/boot.img /sdcard/download/unpacked_boot
+```
++ repack : Repack img file.
+```
+imgf repack /sdcard/download/boot.img /sdcard/download/unpacked_boot /sdcard/download/repacked-boot.img
+```
+---
