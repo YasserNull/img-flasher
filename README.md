@@ -1,6 +1,6 @@
 # Img Flasher
 
-**Img Flasher**: This app allows you to flash, extract, decompress, and recompress IMG files.
+**Img Flasher**: This app allows you to flash, extract, unpack, and repack img files.
 
 You can use the **Img Flasher** app or execute the `imgf` command in the terminal.
 
