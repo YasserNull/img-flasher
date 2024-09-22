@@ -57,7 +57,8 @@ example : boot.img repacked to new-boot.img
 You will find the repacked file in the same path that was picked for the file
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot14.jpg)
 
-I developed this app using **Sketchware Pro**. I apologize for any mistakes or the simple interface, as I am still in the learning phase.
+I developed this app using **Sketchware Pro**.
+I apologize for any mistakes or the simple interface, as I am still in the learning phase.
 
 The app will crashed if you use this pathes so don't use.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot.jpg)
@@ -77,11 +78,11 @@ The app will crashed if you use this pathes so don't use.
         help                     - Show this help message"
 ```
 ### ***Examples :***
-+ list : Print devname ,partname, size.
++ list : Print devname ,partname, size
 ```
 imgf list
 ```
-+ dev : get partition devname.
++ dev : get partition devname
 ```
 imgf dev boot
 ```
@@ -89,7 +90,7 @@ imgf dev boot
 ```
 imgf size boot
 ```
-+ flash : Like fastboot.
++ flash : Like fastboot
 ```
 imgf flash boot /sdcard/download/boot.img
 ```
@@ -97,11 +98,11 @@ imgf flash boot /sdcard/download/boot.img
 ```
 imgf extract boot /sdcard/download/boot.img
 ```
-+ unpack : Unpack img file.
++ unpack : Unpack img file
 ```
 imgf unpack /sdcard/download/boot.img /sdcard/download/unpacked_boot
 ```
-+ repack : Repack img file.
++ repack : Repack img file
 ```
 imgf repack /sdcard/download/boot.img /sdcard/download/unpacked_boot /sdcard/download/repacked-boot.img
 ```
