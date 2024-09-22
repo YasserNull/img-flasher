@@ -42,7 +42,6 @@ You can unpack IMG files like `boot.img` and repack them.
 
 - Note: You will find the **Image Kitchen** button in the side menu.  
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot6.png)
-
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot7.png)
 
 ---
