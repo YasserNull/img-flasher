@@ -26,7 +26,7 @@ You can extract IMG files from your phone such as `boot.img`, `nvram.img`, and `
 ### 2. **Flash:**
 You can flash IMG files such as `boot.img`, `recovery.img`, and also other files like fastboot files.
 
-- Note: Click on ✏️ to select an IMG file or open a folder like `fastboot_redmi9a/`.  
+- Note: Click on ✏️ to pick an IMG file or open a folder like `fastboot_redmi9a/`.  
 - Note: Open files appear in different colors for easy identification.  
 
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot4.png)
