@@ -109,7 +109,7 @@ imgf repack /sdcard/download/boot.img /sdcard/download/unpacked_boot /sdcard/dow
 ---
 ### Install img flasher
 
-+ [img flasher 1.0.0](https://github.com/YasserNull/img-flasher/releases/download/Img-flasher/img-flasher.zip)
++ [img flasher](https://github.com/YasserNull/img-flasher/releases/download/Img-flasher/)
 
 ### License
 
