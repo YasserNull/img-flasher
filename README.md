@@ -38,8 +38,8 @@ You can flash IMG files such as `boot.img`, `recovery.img`, and also other files
 - The `recovery.img` file was successfully flashed, but it seems to have been the wrong file.  
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/camera1.png)
 
-### 3. **Decompress and Recompress:**
-You can decompress IMG files like `boot.img` and recompress them.
+### 3. **Unpack and Repack:**
+You can unpack IMG files like `boot.img` and repack them.
 
 - Note: You will find the **Image Kitchen** button in the side menu.  
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot7.png)
