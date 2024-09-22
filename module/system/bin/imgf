@@ -120,7 +120,7 @@ else
       Commands:
         list                     - Print partitions list
         size [partname]          - Get partition size
-        dev [partname]           - Get partition devname name
+        dev [partname]           - Get partition devname
         flash [partname] [img]   - Flash given partition
         extract [partname] [img] - Extract given partition
         unpack [img] [path]      - Unpack given partition
