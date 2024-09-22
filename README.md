@@ -41,12 +41,19 @@ You can unpack IMG files like `boot.img` and repack them.
 - Note : You will find the **Image Kitchen** button in the side menu.  
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot6.png)
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot7.png)
-### **unpack :**
+### **Unpack :**
 - Note : Click on ✏️ to pick an IMG file and pick a folder for unpack.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot8.png)
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot9.png)
 - Note : You will find the file unpacked in the folder you picked.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot10.png)
+### **Repack :**
+- Note : Click on ✏️ to pick an IMG file and pick a folder for unpack.
+![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot12.jpg)
+![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot13.jpg)
+
 ---
 
 I developed this app using **Sketchware Pro**. I apologize for any mistakes or the simple interface, as I am still in the learning phase.
+The app will crashed if you use this pathes so don't use.
+![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot.jpg)
