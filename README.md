@@ -16,7 +16,7 @@ Note : Click fab button or 🔃 icon to reload.
 Note : You can scroll the log.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot3.png)
 ### Flash : Flashing img files boot.img , recovery.img and other files like fastboot.
-Note : Click ✏️ to select img file or open folder like fastboot_redmi9a/
+Note : Click ✏️ to pick img file or open folder like fastboot_redmi9a/
 boot.img
 recovery.img
 ...
