@@ -39,6 +39,8 @@ You can flash IMG files such as `boot.img`, `recovery.img`, and also other files
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/camera1.png)
 
 ### 3. **Unpack and Repack:**
++ This is done by the magiskboot command **/data/adb/magisk/magiskboot**
+
 You can unpack IMG files like `boot.img` and repack them.
 - Note : You will find the **Image Kitchen** button in the side menu.  
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot6.png)
