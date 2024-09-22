@@ -59,3 +59,18 @@ You will find the repacked file in the same path that was picked for the file
 I developed this app using **Sketchware Pro**. I apologize for any mistakes or the simple interface, as I am still in the learning phase.
 The app will crashed if you use this pathes so don't use.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot.jpg)
+---
+## ***terminal :***
+  Usage: imgf [command] [arguments]
+      Commands:
+        list                     - Print partitions list
+        size [partname]          - Get partition size
+        dev [partname]           - Get partition devname name
+        flash [partname] [img]   - Flash given partition
+        extract [partname] [img] - Extract given partition
+        unpack [img] [path]      - Unpack given partition
+        repack [img] [path] [new-img] - Repack given partition
+        version          - output version information and exit
+        help                     - Show this help message"
+
+---
