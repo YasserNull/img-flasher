@@ -109,7 +109,7 @@ imgf repack /sdcard/download/boot.img /sdcard/download/unpacked_boot /sdcard/dow
 ---
 ### Install img flasher
 
-+ [imgf 1.0.0](https://github.com/Magisk-Modules-Alt-Repo/imgf/releases/tag/imgf-v1.0.0)
++ [img flasher 1.0.0](https://github.com/YasserNull/img-flasher/releases/download/Img-flasher/img-flasher.zip)
 
 ### License
 
