@@ -7,6 +7,8 @@ You can use the **Img Flasher** app or execute the `imgf` command in the termina
 ### ⚠️ Warning:
 When using the flash command, you cannot stop the process. Be careful; flashing the wrong file may cause your device to stop working or enter a boot loop.
 
+### - ***App path : /sdcard/Download/ImgFlasher***
+
 ## App Features:
 
 ### 1. **Extract or Backup:**
@@ -104,3 +106,10 @@ imgf unpack /sdcard/download/boot.img /sdcard/download/unpacked_boot
 imgf repack /sdcard/download/boot.img /sdcard/download/unpacked_boot /sdcard/download/repacked-boot.img
 ```
 ---
+### Install img flasher
+
++ [imgf 1.0.0](https://github.com/Magisk-Modules-Alt-Repo/imgf/releases/tag/imgf-v1.0.0)
+
+### License
+
+[MIT](LICENSE)
