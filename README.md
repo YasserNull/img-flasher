@@ -45,13 +45,13 @@ You can unpack IMG files like `boot.img` and repack them.
 - Note : Click on ✏️ to pick an IMG file and pick a folder for unpack.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot8.png)
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot9.png)
-- Note : You will find the file unpacked in the folder you picked.
+- You will find the repacked file in the picked folder.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot10.png)
 ### **Repack :**
 - Note : Click on ✏️ to pick an IMG file and pick a folder for unpack.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot12.png)
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot13.jpg)
-
+You will find the repacked in the folder you picked.
 ---
 
 I developed this app using **Sketchware Pro**. I apologize for any mistakes or the simple interface, as I am still in the learning phase.
