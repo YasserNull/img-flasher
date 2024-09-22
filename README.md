@@ -38,13 +38,15 @@ You can flash IMG files such as `boot.img`, `recovery.img`, and also other files
 
 ### 3. **Unpack and Repack:**
 You can unpack IMG files like `boot.img` and repack them.
-
 - Note : You will find the **Image Kitchen** button in the side menu.  
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot6.png)
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot7.png)
-+ unpack : 
+### **unpack :**
 - Note : Click on ✏️ to pick an IMG file and pick a folder for unpack.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot8.png)
+![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot9.png)
+- Note : You will find the file unpacked in the folder you picked.
+![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot10.png)
 ---
 
 I developed this app using **Sketchware Pro**. I apologize for any mistakes or the simple interface, as I am still in the learning phase.
