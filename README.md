@@ -60,13 +60,13 @@ I developed this app using **Sketchware Pro**. I apologize for any mistakes or t
 The app will crashed if you use this pathes so don't use.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot.jpg)
 
-## ***terminal :***
+## ***Terminal :***
 ```
   Usage: imgf [command] [arguments]
       Commands:
         list                     - Print partitions list
         size [partname]          - Get partition size
-        dev [partname]           - Get partition devname name
+        dev [partname]           - Get partition devname
         flash [partname] [img]   - Flash given partition
         extract [partname] [img] - Extract given partition
         unpack [img] [path]      - Unpack given partition
@@ -74,4 +74,16 @@ The app will crashed if you use this pathes so don't use.
         version          - output version information and exit
         help                     - Show this help message"
 ```
----
+### ***Examples :***
++ list : print devname ,partname, size 
+```
+imgf list
+```
+result: ```mccblk0p31 boot 6MB```
+
++ dev : get partition devname
+ ```imgf dev boot```
+ result: ```mmcblk0p31```
++ size : get partition size
+ ```imgf size boot```
+ result: ```64MB```
