@@ -61,6 +61,7 @@ The app will crashed if you use this pathes so don't use.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot.jpg)
 
 ## ***terminal :***
+```
   Usage: imgf [command] [arguments]
       Commands:
         list                     - Print partitions list
@@ -72,5 +73,5 @@ The app will crashed if you use this pathes so don't use.
         repack [img] [path] [new-img] - Repack given partition
         version          - output version information and exit
         help                     - Show this help message"
-
+```
 ---
