@@ -67,7 +67,8 @@ import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import java.net.URLDecoder;
-import java.lang.Process;
+import java.lang.Process;
+
 
 public class ImgflasherActivity extends AppCompatActivity {
 	
@@ -90,6 +91,7 @@ public class ImgflasherActivity extends AppCompatActivity {
 	public final int REQ_CD_Folder_PICKER = 1;
 	private String output = "";
 	private double count_files = 0;
+	private double position = 0;
 	
 	private ArrayList<HashMap<String, Object>> listmap = new ArrayList<>();
 	private ArrayList<String> liststring = new ArrayList<>();
@@ -332,11 +334,12 @@ public class ImgflasherActivity extends AppCompatActivity {
 			public void onClick(View _view) {
 				if (selectn1 > 0) {
 					running = true;
+					_fab.setImageResource(R.drawable.ic_close_white);
 					_fab.setBackgroundTintList(android.content.res.ColorStateList.valueOf(0xFFFF0000));
 					fab = false;
 					shared_perfernces.edit().remove("exit_code").commit();
 					shared_perfernces.edit().remove("break").commit();
-					_fab.hide();
+					_fab.show();
 					button2.setTextColor(0xFF9E9E9E);
 					button3.setTextColor(0xFF9E9E9E);
 					button4.setTextColor(0xFF9E9E9E);
@@ -371,7 +374,7 @@ public class ImgflasherActivity extends AppCompatActivity {
 						if (listmap.get((int)i).get("selection1").toString().equals("true")) {
 							try {
 								ProcessBuilder process_builder = new ProcessBuilder();
-								process_builder.command("su", "-c", "imgf flash ".concat(listmap.get((int)i).get("path").toString().concat(" /dev/block/".concat(listmap.get((int)i).get("partname").toString()))));
+								process_builder.command("su", "-c", "imgf flash ".concat(listmap.get((int)i).get("partname").toString().concat(" ".concat(listmap.get((int)i).get("path").toString()))));
 								process_builder.redirectErrorStream(true);
 								Process process = process_builder.start();
 								BufferedReader buffered_reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -418,11 +421,10 @@ public class ImgflasherActivity extends AppCompatActivity {
 							}
 						}
 					}
-					for(int _repeat108 = 0; _repeat108 < (int)(listmap.size()); _repeat108++) {
-						listmap.get((int)_repeat108).put("selection1", "false");
+					for(int _repeat328 = 0; _repeat328 < (int)(listmap.size()); _repeat328++) {
+						listmap.get((int)_repeat328).put("selection1", "false");
 						selectn1 = 0;
 					}
-					_fab.show();
 					((BaseAdapter)listview1.getAdapter()).notifyDataSetChanged();
 				}
 				else {
@@ -658,7 +660,8 @@ public class ImgflasherActivity extends AppCompatActivity {
 					}
 				}
 				if (Uri.parse(_filePath.get((int)(0))).getLastPathSegment().endsWith(".img")) {
-					listmap.get((int)Integer.parseInt(shared_perfernces.getString("position", ""))).put("path", _filePath.get((int)(0)));
+					listmap.get((int)position).put("path", _filePath.get((int)(0)));
+					position = 0;
 					((BaseAdapter)listview2.getAdapter()).notifyDataSetChanged();
 				}
 				else {
@@ -843,7 +846,8 @@ public class ImgflasherActivity extends AppCompatActivity {
 			imageview2.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View _view) {
-					shared_perfernces.edit().putString("position", String.valueOf((long)(_position))).commit();
+					position = 0;
+					position = _position;
 					startActivityForResult(file_picker, REQ_CD_FILE_PICKER);
 				}
 			});
@@ -851,4 +855,4 @@ public class ImgflasherActivity extends AppCompatActivity {
 			return _view;
 		}
 	}
-}
+}
