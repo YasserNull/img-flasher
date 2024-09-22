@@ -33,7 +33,6 @@ You can flash IMG files such as `boot.img`, `recovery.img`, and also other files
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot5.png)
 
 - Note: Open files appear in different colors for easy identification.  
-![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot6.png)
 
 - The `recovery.img` file was successfully flashed, but it seems to have been the wrong file.  
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/camera1.png)
@@ -42,6 +41,8 @@ You can flash IMG files such as `boot.img`, `recovery.img`, and also other files
 You can unpack IMG files like `boot.img` and repack them.
 
 - Note: You will find the **Image Kitchen** button in the side menu.  
+![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot6.png)
+
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot7.png)
 
 ---
