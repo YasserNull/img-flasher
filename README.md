@@ -49,7 +49,7 @@ You can unpack IMG files like `boot.img` and repack them.
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot10.png)
 ### **Repack :**
 - Note : Click on ✏️ to pick an IMG file and pick a folder for unpack.
-![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot12.jpg)
+![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot12.png)
 ![Screenshot](https://github.com/YasserNull/img-flasher/blob/main/Images/screenshot13.jpg)
 
 ---
