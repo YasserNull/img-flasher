@@ -79,18 +79,14 @@ The app will crashed if you use this pathes so don't use.
 ```
 imgf list
 ```
-     result: ```mccblk0p31 boot 6MB```
-
 + dev : get partition devname.
 ```
 imgf dev boot
 ```
-     result: ```mmcblk0p31```
 + size : Get partition size
 ```
 imgf size boot
 ```
-     result: ```64MB```
 + flash : Like fastboot.
 ```
 imgf flash boot /sdcard/download/boot.img
